@@ -1,0 +1,21 @@
+{
+  "name": "Start on Heroku: Python",
+  "description": "A personal website,where I keep blogging,from time to time.",
+  "image": "personal/static/personal/img/profile",
+  "repository": "https://github.com/bhaskarjyotitamuly/mystic_programmer",
+  "keywords": ["python","mystic_programmer","django" ],
+  "env": {
+    "SECRET_KEY": {
+      "description": "The secret key for the Django application.",
+      "generator": "secret"
+    }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "python manage.py collectstatic --noinput",
+        "test": "python manage.py test"
+      }
+    }
+  }
+}
