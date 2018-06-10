@@ -14,3 +14,6 @@ django-heroku = "*"
 [requires]
 
 python_version = "3.6"
+
+[requires]
+python_full_version="3.6.2"
